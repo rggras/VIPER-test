@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="II3-JJ-3Sf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Perfil-->
+        <scene sceneID="Z7A-R2-3Ix">
+            <objects>
+                <viewController id="II3-JJ-3Sf" customClass="ProfileViewController" customModule="MoneyBack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QYH-9A-NgZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dck-uq-NXg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cbk-9h-Aak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8iQ-AZ-baW">
+                                <rect key="frame" x="108" y="46" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="C3J-By-Ylc"/>
+                                    <constraint firstAttribute="height" constant="160" id="JOd-tb-upq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBD-Zd-CBY">
+                                <rect key="frame" x="16" y="239" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@test.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyn-Ux-Oo2">
+                                <rect key="frame" x="16" y="277" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-l8-vbl">
+                                <rect key="frame" x="16" y="326" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.25882352941176473" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QaM-27-pJf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogoutPressed:" destination="II3-JJ-3Sf" eventType="touchUpInside" id="7Mn-mQ-u08"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Hn-l8-vbl" firstAttribute="top" secondItem="xyn-Ux-Oo2" secondAttribute="bottom" constant="28" id="9Mv-bA-HBH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9Hn-l8-vbl" secondAttribute="leading" id="KCa-HY-G2C"/>
+                            <constraint firstItem="xyn-Ux-Oo2" firstAttribute="top" secondItem="hBD-Zd-CBY" secondAttribute="bottom" constant="-2" id="LID-j4-57w"/>
+                            <constraint firstItem="hBD-Zd-CBY" firstAttribute="top" secondItem="8iQ-AZ-baW" secondAttribute="bottom" constant="33" id="PdR-0P-B7k"/>
+                            <constraint firstItem="9Hn-l8-vbl" firstAttribute="centerX" secondItem="cbk-9h-Aak" secondAttribute="centerX" id="Sg8-NH-9XZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xyn-Ux-Oo2" secondAttribute="trailing" id="T8q-Jw-uus"/>
+                            <constraint firstItem="8iQ-AZ-baW" firstAttribute="top" secondItem="QYH-9A-NgZ" secondAttribute="bottom" constant="26" id="Uuk-zc-As5"/>
+                            <constraint firstItem="hBD-Zd-CBY" firstAttribute="centerX" secondItem="cbk-9h-Aak" secondAttribute="centerX" id="Ux4-Ph-Tpp"/>
+                            <constraint firstItem="xyn-Ux-Oo2" firstAttribute="centerX" secondItem="cbk-9h-Aak" secondAttribute="centerX" id="VR4-nP-Hgj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xyn-Ux-Oo2" secondAttribute="leading" id="cwM-rV-aQe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Hn-l8-vbl" secondAttribute="trailing" id="fxQ-uF-JGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hBD-Zd-CBY" secondAttribute="trailing" id="rFV-6I-ct3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hBD-Zd-CBY" secondAttribute="leading" id="yhd-gj-EPc"/>
+                            <constraint firstItem="8iQ-AZ-baW" firstAttribute="centerX" secondItem="cbk-9h-Aak" secondAttribute="centerX" id="zbN-ji-6XF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="UNA-RZ-k1a"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="8iQ-AZ-baW" id="XOp-IW-4iY"/>
+                        <outlet property="emailLabel" destination="xyn-Ux-Oo2" id="Xis-pJ-hjm"/>
+                        <outlet property="nameLabel" destination="hBD-Zd-CBY" id="Gdd-Dm-SwQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nE-jy-gRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7.5" y="187.5"/>
+        </scene>
+    </scenes>
+</document>

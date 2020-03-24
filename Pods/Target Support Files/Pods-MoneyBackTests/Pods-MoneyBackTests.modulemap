@@ -1,0 +1,6 @@
+framework module Pods_MoneyBackTests {
+  umbrella header "Pods-MoneyBackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

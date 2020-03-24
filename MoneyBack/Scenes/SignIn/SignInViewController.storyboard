@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XkY-14-xSg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="aQ5-0h-mU9">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="XkY-14-xSg" customClass="SignInViewController" customModule="MoneyBack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FyF-n1-W1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="ByX-FS-Geo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ohq-4I-Aew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignInBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JFk-5f-QjF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignInLogo" translatesAutoresizingMaskIntoConstraints="NO" id="j4Z-QQ-7ue">
+                                <rect key="frame" x="37" y="30" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="31s-Gu-W86"/>
+                                    <constraint firstAttribute="width" constant="300" id="hdG-pv-CfO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignInGLLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bll-Tr-3xV">
+                                <rect key="frame" x="133" y="601" width="110" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Br0-Rt-SeY"/>
+                                    <constraint firstAttribute="height" constant="20" id="oDZ-Oj-97f"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-bH-HRR">
+                                <rect key="frame" x="79" y="497" width="217" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="SBW-AU-EQS"/>
+                                    <constraint firstAttribute="width" constant="217" id="pNH-RL-zaU"/>
+                                </constraints>
+                                <state key="normal" image="SignInButton"/>
+                                <connections>
+                                    <action selector="onGoogleSignInPressed:" destination="XkY-14-xSg" eventType="touchUpInside" id="y8k-uU-nWJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JFk-5f-QjF" secondAttribute="trailing" id="00R-Gb-YA6"/>
+                            <constraint firstItem="ByX-FS-Geo" firstAttribute="top" secondItem="bll-Tr-3xV" secondAttribute="bottom" constant="46" id="0hp-tA-ePS"/>
+                            <constraint firstItem="JFk-5f-QjF" firstAttribute="top" secondItem="Ohq-4I-Aew" secondAttribute="top" id="35E-6T-faM"/>
+                            <constraint firstItem="JFk-5f-QjF" firstAttribute="leading" secondItem="Ohq-4I-Aew" secondAttribute="leading" id="3dF-tn-rgY"/>
+                            <constraint firstItem="5Mp-bH-HRR" firstAttribute="centerX" secondItem="Ohq-4I-Aew" secondAttribute="centerX" id="9ga-9d-NK0"/>
+                            <constraint firstItem="ByX-FS-Geo" firstAttribute="top" secondItem="5Mp-bH-HRR" secondAttribute="bottom" constant="116" id="9u0-ji-Fb2"/>
+                            <constraint firstItem="j4Z-QQ-7ue" firstAttribute="top" secondItem="FyF-n1-W1c" secondAttribute="bottom" constant="10" id="BLs-xc-KSA"/>
+                            <constraint firstItem="j4Z-QQ-7ue" firstAttribute="centerX" secondItem="Ohq-4I-Aew" secondAttribute="centerX" id="VEL-5k-hDm"/>
+                            <constraint firstItem="bll-Tr-3xV" firstAttribute="centerX" secondItem="Ohq-4I-Aew" secondAttribute="centerX" id="cLX-Wi-lpE"/>
+                            <constraint firstAttribute="bottom" secondItem="JFk-5f-QjF" secondAttribute="bottom" id="m1d-AV-qp6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFM-0U-HHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="119.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SignInBackground" width="360" height="567"/>
+        <image name="SignInButton" width="160" height="54"/>
+        <image name="SignInGLLogo" width="73" height="13"/>
+        <image name="SignInLogo" width="174" height="129"/>
+    </resources>
+</document>
